@@ -12,6 +12,18 @@ struct Constants {
     static let prefixURLString = "https://hacker-news.firebaseio.com/v0/"
     static let suffixURLString = "?print=pretty"
     static let badAccessError = "Bad Access Error"
+    static let storiesListSegueIdentifier = "StoriesList"
+    static let errorMessageForLogin = "email/password can't be empty"
+    static let estimatedProgress = "estimatedProgress"
+    static let noArticalMessage = "No Articals for this Story"
+    static let webViewLoadingMessage = "WebView rendering of the Artical URL"
+    static let dateFormate = "d MMM, yyyy"
+    static let dateFormateWithTime = "d MMM, yyyy HH:mm"
+    static let commentsCellIdentifier = "commentsCell"
+    static let storyListCellIdentifier = "StoryCell"
+    static let storyDetailSegueIdentifier = "StoryDetailSegue"
+    static let noCommentsFound = "No Comments found"
+    static let noArticalsFound = "No Articals found"
  }
 
 class NetworkHandler {

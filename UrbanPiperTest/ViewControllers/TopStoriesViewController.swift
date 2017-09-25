@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class TopStoriesViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
@@ -14,9 +15,20 @@ class TopStoriesViewController: UIViewController,UITableViewDataSource,UITableVi
     @IBOutlet weak var updatedTimeLbl: UILabel!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var model = StoriesListResponseModel()
     let detailModel = StoriesDetailResponseModel()
     var story:Story?
+    
+    var date: Date?
+    weak var myTimer: Timer?
+    
+    private let refreshControl = UIRefreshControl()
+    private var isAlreadyUpdated: Bool?
+
+    var seconds = 60
+    var timer = Timer()
+    var isTimerRunning = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +37,12 @@ class TopStoriesViewController: UIViewController,UITableViewDataSource,UITableVi
         storiesTableView.dataSource = self
         model.storyDelegate = self
         storiesTableView.isHidden = true
-        
+        date = Date()
+        runTimer()
         self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
+        self.isAlreadyUpdated = false
+        refreshControl.addTarget(self, action: #selector(refreshStoriesTable), for: .valueChanged)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,15 +53,29 @@ class TopStoriesViewController: UIViewController,UITableViewDataSource,UITableVi
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.activityIndicator.startAnimating()
+        self.updatedTimeLbl.text = Date().getTimeAgoSinceNow(date!)
         
     }
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(self.updateTimeLabel)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimeLabel() {
+        self.updatedTimeLbl.text = Date().getTimeAgoSinceNow(date!)
+    }
+    
+    @objc func refreshStoriesTable(){
+        model.networkCall()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.storiesArray.count;
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell") as! StoriesListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.storyListCellIdentifier) as! StoriesListTableViewCell
         
         let date = Date(timeIntervalSince1970: TimeInterval(Double(String(describing: model.storiesArray[indexPath.row].time!))!))
         let timeSinceToday = Date().getTimeAgoSinceNow(date)
@@ -65,14 +94,14 @@ class TopStoriesViewController: UIViewController,UITableViewDataSource,UITableVi
         if let commentArray = story?.kidsArray{
             detailModel.parseCommentsArray(commentArray, itemNumber: (story?.id!)!)
         }
-        self.performSegue(withIdentifier: "StoryDetailSegue", sender: self)
+        self.performSegue(withIdentifier: Constants.storyDetailSegueIdentifier, sender: self)
     }
 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "StoryDetailSegue" {
+        if segue.identifier == Constants.storyDetailSegueIdentifier {
             let detailVC = segue.destination as! StoryDetailViewController
             detailVC.story = story
             detailVC.detailModel = detailModel
@@ -82,11 +111,21 @@ class TopStoriesViewController: UIViewController,UITableViewDataSource,UITableVi
 }
 
 extension TopStoriesViewController: StoriesListResponseModelDelegate{
-    func storiesArraySet() {
+    @objc func storiesArraySet() {
         OperationQueue.main.addOperation({ () -> Void in
         self.storiesTableView.isHidden = false
         self.storiesTableView.reloadData()
         self.activityIndicator.stopAnimating()
+        self.refreshControl.endRefreshing()
+
+        // Add Refresh Control to Table View
+            if #available(iOS 10.0, *),!self.isAlreadyUpdated! {
+                self.storiesTableView.refreshControl = self.refreshControl
+            } else {
+                self.storiesTableView.addSubview(self.refreshControl)
+            }
+            self.isAlreadyUpdated = true
+            
         })
     }
 }

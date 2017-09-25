@@ -20,33 +20,40 @@ class StoryDetailViewController: UIViewController,UITableViewDelegate,UITableVie
     
     @IBOutlet weak var commentsTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var EmptyLabel: UILabel!
+    @IBOutlet weak var loadingLabelForWebView: UILabel!
     
     @IBOutlet weak var webView: WKWebView!
     var story:Story?
     var comments: [CommentDetails]?
     var detailModel: StoriesDetailResponseModel?
+    var isCommentsLoadedFromBE: Bool?
+    
+    let cellHeightConstant: CGFloat = 70.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showHighlightedView(isHidden: true)
+        
         self.commentsTableView.isHidden = true
         self.navigationController?.navigationBar.isHidden = true
+        
+        // StoryDetail Delegate
         detailModel?.commentDelegate = self
-        // Do any additional setup after loading the view.
+        
+        // Web view Delegate.
         webView.uiDelegate = self
         webView.isHidden = true
+        loadingLabelForWebView.isHidden = true
+        self.isCommentsLoadedFromBE = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         storyTitleLbl.text = story!.title!
         storyUrlLbl.text = story!.url!
-        creationTimeLbl.text = "\(timeConvertor(story!.time!, with: "d MMM, yyyy")) . \(story!.userName!)"
+        creationTimeLbl.text = "\(timeConvertor(story!.time!, with: Constants.dateFormate)) . \(story!.userName!)"
         numberOfCommentsBtn.setTitle(story!.commentsCount! + " COMMENTS", for: .normal)
-        if story!.commentsCount!.count > 0 {
-            self.commentsTableView.isHidden = true
-        }
+        self.emptyCommentsCheck()
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,28 +62,64 @@ class StoryDetailViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     
     @IBAction func commentsBtnTapped(_ sender: Any) {
-       self.showHighlightedView(isHidden: true)
+        self.showHighlightedView(isHidden: true)
         webView.isHidden = true
-        self.commentsTableView.isHidden = false
+        webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), context: nil)
+        self.activityIndicator.isHidden = false
+        loadingLabelForWebView.isHidden = true
+        if self.isCommentsLoadedFromBE! {
+            self.commentsTableView.isHidden = false
+            self.commentsTableView.reloadData()
+            self.activityIndicator.isHidden = true
+        }
+        self.emptyCommentsCheck()
     }
     
     @IBAction func articalBtnTapped(_ sender: Any) {
         OperationQueue.main.addOperation({ () -> Void in
-        self.EmptyLabel.text = "WebView rendering of the Artical URL"
-        self.webView.isHidden = false
-        self.showHighlightedView(isHidden: false)
-        self.commentsTableView.isHidden = true
-        self.activityIndicator.isHidden = true
-        (sender as! UIButton).tag = 100
-        print("hi")
+            self.loadingLabelForWebView.isHidden = false
+            if let _ = self.story?.url {
+                self.loadingLabelForWebView.text = Constants.webViewLoadingMessage
+            } else{
+                self.loadingLabelForWebView.text = Constants.noArticalsFound
+            }
+            
+            self.webView.isHidden = false
+            self.showHighlightedView(isHidden: false)
+            self.commentsTableView.isHidden = true
+            self.activityIndicator.isHidden = true
         })
         
         if let url = URL(string: story!.url!) {
             let myRequest = URLRequest(url: url)
             webView.load(myRequest)
-            EmptyLabel.isHidden = true
+            webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
+            
         } else {
-            EmptyLabel.text = "No Articals for this Story"
+            loadingLabelForWebView.text = Constants.noArticalMessage
+        }
+    }
+    
+    func emptyCommentsCheck(){
+        if story!.commentsCount!.count == 1 {
+            self.commentsTableView.isHidden = true
+            self.activityIndicator.isHidden = true
+            self.activityIndicator.stopAnimating()
+            loadingLabelForWebView.isHidden = false
+            loadingLabelForWebView.text = Constants.noCommentsFound
+        }
+    }
+    
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        guard let _ = object as? WKWebView else { return }
+        guard let keyPath = keyPath else { return }
+        guard let _ = change else { return }
+        
+        if keyPath == Constants.estimatedProgress {
+            if Float(webView.estimatedProgress) > 0.5 {
+                self.loadingLabelForWebView.isHidden = true
+            }
         }
     }
     
@@ -106,40 +149,46 @@ class StoryDetailViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "commentsCell") as! CommentsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.commentsCellIdentifier) as! CommentsTableViewCell
         cell.commentText.text =  comments![indexPath.row].cooment
-        cell.timeAndUserDetail.text = timeConvertor((comments![indexPath.row].time)!, with: "d MMM, yyyy HH:mm") + " . " + (comments![indexPath.row].userName)!
+        cell.timeAndUserDetail.text = timeConvertor((comments![indexPath.row].time)!, with: Constants.dateFormateWithTime) + " . " + (comments![indexPath.row].userName)!
         return cell
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let height:CGFloat = self.calculateHeight(inString: comments![indexPath.row].cooment!)
+        return height + cellHeightConstant
     }
-    */
-
+    
+    func calculateHeight(inString:String) -> CGFloat {
+        let messageString = inString
+        let rect : CGRect = messageString.boundingRect(with: CGSize(width: 222.0, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, context: nil)
+        let requredSize:CGRect = rect
+        
+        return requredSize.height
+    }
 }
 
 extension StoryDetailViewController: CommentsListResponseModelDelegate{
     func commentsArraySet(commentsArray: [CommentDetails]) {
         comments = commentsArray
         OperationQueue.main.addOperation({ () -> Void in
+            
         self.commentsTableView.delegate = self
         self.commentsTableView.dataSource = self
         self.commentsTableView.reloadData()
+            
         let button = self.view.viewWithTag(100) as? UIButton
             if !(button?.isSelected)! {
-                self.commentsTableView.isHidden = true
-            } else {
                 self.commentsTableView.isHidden = false
+            } else {
+                self.commentsTableView.isHidden = true
             }
             
-        self.EmptyLabel.isHidden = true
+        self.loadingLabelForWebView.isHidden = true
         self.activityIndicator.stopAnimating()
+        self.activityIndicator.isHidden = true
+        self.isCommentsLoadedFromBE = true
         })
     }
 }

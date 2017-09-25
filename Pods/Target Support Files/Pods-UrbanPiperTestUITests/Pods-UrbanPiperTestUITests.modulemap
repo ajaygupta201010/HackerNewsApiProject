@@ -1,0 +1,6 @@
+framework module Pods_UrbanPiperTestUITests {
+  umbrella header "Pods-UrbanPiperTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -58,13 +58,13 @@ class ViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDelegate
                     return
                 }
                 self.activityIndicator.isHidden = true
-                self.performSegue(withIdentifier: "StoriesList", sender: self)
+                self.performSegue(withIdentifier: Constants.storiesListSegueIdentifier, sender: self)
             }
         } else {
             self.activityIndicator.stopAnimating()
             self.loginButton.isHidden = false
             self.activityIndicator.isHidden = true
-            self.showMessagePrompt("email/password can't be empty")
+            self.showMessagePrompt(Constants.errorMessageForLogin)
         }
     }
     
@@ -81,7 +81,7 @@ class ViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDelegate
                 self.activityIndicator.isHidden = true
                 return
             }
-            self.performSegue(withIdentifier: "StoriesList", sender: self)
+            self.performSegue(withIdentifier: Constants.storiesListSegueIdentifier, sender: self)
         }
     }
     

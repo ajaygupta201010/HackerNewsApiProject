@@ -1,0 +1,334 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StoryDetailViewController"
+provides-nominal:
+- "14UrbanPiperTest25StoryDetailViewControllerC"
+provides-member:
+- ["14UrbanPiperTest25StoryDetailViewControllerC", ""]
+provides-dynamic-lookup:
+- "articalBtnTapped"
+- "commentsBtnTapped"
+- "commentsTableView"
+- "creationTimeLbl"
+- "didReceiveMemoryWarning"
+- "highlightedView1"
+- "highlightedView2"
+- "numberOfCommentsBtn"
+- "storyTitleLbl"
+- "storyUrlLbl"
+- "viewDidLoad"
+depends-top-level:
+- !private "!"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "StoryDetailViewController"
+- "UIButton"
+- "UILabel"
+- "UITableView"
+- "UIView"
+- "UIViewController"
+depends-member:
+- !private ["So15CALayerDelegateP", "isHidden"]
+- !private ["s7CVarArgP", "commentsTableView"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "highlightedView1"]
+- !private ["s7CVarArgP", "highlightedView2"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "showHighlightedView"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "commentsTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "highlightedView1"]
+- !private ["s28CustomDebugStringConvertibleP", "highlightedView2"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "showHighlightedView"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "commentsTableView"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "highlightedView1"]
+- !private ["s23CustomStringConvertibleP", "highlightedView2"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "showHighlightedView"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "commentsTableView"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "highlightedView1"]
+- !private ["s9EquatableP", "highlightedView2"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isHidden"]
+- !private ["s9EquatableP", "showHighlightedView"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "commentsTableView"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "highlightedView1"]
+- !private ["s8HashableP", "highlightedView2"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isHidden"]
+- !private ["s8HashableP", "showHighlightedView"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "commentsTableView"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "highlightedView1"]
+- !private ["So8NSCodingP", "highlightedView2"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "showHighlightedView"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "commentsTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "highlightedView1"]
+- !private ["So26NSExtensionRequestHandlingP", "highlightedView2"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "showHighlightedView"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITableView"]
+- ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "articalBtnTapped"]
+- ["So8NSObjectC", "commentsBtnTapped"]
+- ["So8NSObjectC", "commentsTableView"]
+- ["So8NSObjectC", "creationTimeLbl"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "highlightedView1"]
+- ["So8NSObjectC", "highlightedView2"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isHidden"]
+- ["So8NSObjectC", "numberOfCommentsBtn"]
+- ["So8NSObjectC", "showHighlightedView"]
+- ["So8NSObjectC", "storyTitleLbl"]
+- ["So8NSObjectC", "storyUrlLbl"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "commentsTableView"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "highlightedView1"]
+- !private ["So16NSObjectProtocolP", "highlightedView2"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isHidden"]
+- !private ["So16NSObjectProtocolP", "showHighlightedView"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "Bool"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "UIButton"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "UILabel"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "UITableView"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "UIView"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "articalBtnTapped"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "commentsBtnTapped"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "commentsTableView"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "creationTimeLbl"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "deinit"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "didReceiveMemoryWarning"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "highlightedView1"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "highlightedView2"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "init"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "numberOfCommentsBtn"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "showHighlightedView"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "storyTitleLbl"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "storyUrlLbl"]
+- ["14UrbanPiperTest25StoryDetailViewControllerC", "viewDidLoad"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
+- !private ["So12UIAppearanceP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "commentsTableView"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "highlightedView1"]
+- !private ["So21UIAppearanceContainerP", "highlightedView2"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "showHighlightedView"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "commentsTableView"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "highlightedView1"]
+- !private ["So18UIContentContainerP", "highlightedView2"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "showHighlightedView"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
+- !private ["So23UIDataSourceTranslatingP", "isHidden"]
+- !private ["So13UIDynamicItemP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "commentsTableView"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "highlightedView1"]
+- !private ["So18UIFocusEnvironmentP", "highlightedView2"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "showHighlightedView"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "commentsTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "highlightedView1"]
+- !private ["So30UIPasteConfigurationSupportingP", "highlightedView2"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "showHighlightedView"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITableView"]
+- ["So11UIResponderC", "UIView"]
+- ["So11UIResponderC", "articalBtnTapped"]
+- ["So11UIResponderC", "commentsBtnTapped"]
+- ["So11UIResponderC", "commentsTableView"]
+- ["So11UIResponderC", "creationTimeLbl"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "highlightedView1"]
+- ["So11UIResponderC", "highlightedView2"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isHidden"]
+- ["So11UIResponderC", "numberOfCommentsBtn"]
+- ["So11UIResponderC", "showHighlightedView"]
+- ["So11UIResponderC", "storyTitleLbl"]
+- ["So11UIResponderC", "storyUrlLbl"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "commentsTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "highlightedView1"]
+- !private ["So30UIResponderStandardEditActionsP", "highlightedView2"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "showHighlightedView"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So12UIScrollViewC", "isHidden"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
+- !private ["So16UIStateRestoringP", "commentsTableView"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "highlightedView1"]
+- !private ["So16UIStateRestoringP", "highlightedView2"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "showHighlightedView"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So11UITableViewC", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "commentsTableView"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "highlightedView1"]
+- !private ["So18UITraitEnvironmentP", "highlightedView2"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "showHighlightedView"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "isHidden"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UITableView"]
+- ["So16UIViewControllerC", "UIView"]
+- ["So16UIViewControllerC", "articalBtnTapped"]
+- ["So16UIViewControllerC", "commentsBtnTapped"]
+- ["So16UIViewControllerC", "commentsTableView"]
+- ["So16UIViewControllerC", "creationTimeLbl"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "highlightedView1"]
+- ["So16UIViewControllerC", "highlightedView2"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "numberOfCommentsBtn"]
+- ["So16UIViewControllerC", "showHighlightedView"]
+- ["So16UIViewControllerC", "storyTitleLbl"]
+- ["So16UIViewControllerC", "storyUrlLbl"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "commentsTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "highlightedView1"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "highlightedView2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showHighlightedView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "14UrbanPiperTest25StoryDetailViewControllerC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So11UITableViewC"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "7971ec784d0121704200710190e08891"

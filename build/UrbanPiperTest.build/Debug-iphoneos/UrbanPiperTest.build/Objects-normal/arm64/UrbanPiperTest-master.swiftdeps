@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "e48de6d9611a98541561a4ff56e73b9f"
+build_time: [1505890061, 839418000]
+inputs:
+  "/Users/ajgupta/Desktop/UrbanPiperTest/UrbanPiperTest/TopStoriesViewController.swift": [1505890058, 0]
+  "/Users/ajgupta/Desktop/UrbanPiperTest/UrbanPiperTest/StoryDetailViewController.swift": [1505834887, 0]
+  "/Users/ajgupta/Desktop/UrbanPiperTest/UrbanPiperTest/ViewController.swift": [1505890058, 0]
+  "/Users/ajgupta/Desktop/UrbanPiperTest/UrbanPiperTest/AppDelegate.swift": [1505887810, 0]
+  "/Users/ajgupta/Desktop/UrbanPiperTest/UrbanPiperTest/StoriesListTableViewCell.swift": [1505831064, 0]
+  "/Users/ajgupta/Desktop/UrbanPiperTest/UrbanPiperTest/NetworkHandler.swift": [1505889934, 0]

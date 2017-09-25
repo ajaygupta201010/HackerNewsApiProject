@@ -1,0 +1,393 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StoriesListResponseModelDelegate"
+- "StoriesListResponseModel"
+- "CommentsListResponseModelDelegate"
+- "StoriesDetailResponseModel"
+- "Story"
+- "CommentDetails"
+provides-nominal:
+- "14UrbanPiperTest32StoriesListResponseModelDelegateP"
+- "14UrbanPiperTest24StoriesListResponseModelC"
+- "14UrbanPiperTest33CommentsListResponseModelDelegateP"
+- "14UrbanPiperTest26StoriesDetailResponseModelC"
+- "14UrbanPiperTest5StoryV"
+- "14UrbanPiperTest14CommentDetailsV"
+provides-member:
+- ["14UrbanPiperTest32StoriesListResponseModelDelegateP", ""]
+- ["14UrbanPiperTest24StoriesListResponseModelC", ""]
+- ["14UrbanPiperTest33CommentsListResponseModelDelegateP", ""]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", ""]
+- ["14UrbanPiperTest5StoryV", ""]
+- ["14UrbanPiperTest14CommentDetailsV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+="
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "CommentDetails"
+- "CommentsListResponseModelDelegate"
+- "NSArray"
+- "NSDictionary"
+- !private "NSMakeRange"
+- "NetworkHandler"
+- "StoriesDetailResponseModel"
+- "StoriesListResponseModel"
+- "StoriesListResponseModelDelegate"
+- "Story"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subarray"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- ["14UrbanPiperTest14CommentDetailsV", "String"]
+- ["14UrbanPiperTest14CommentDetailsV", "cooment"]
+- ["14UrbanPiperTest14CommentDetailsV", "init"]
+- ["14UrbanPiperTest14CommentDetailsV", "time"]
+- ["14UrbanPiperTest14CommentDetailsV", "userName"]
+- ["14UrbanPiperTest33CommentsListResponseModelDelegateP", "CommentDetails"]
+- ["14UrbanPiperTest33CommentsListResponseModelDelegateP", "commentsArraySet"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subarray"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subarray"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subarray"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "count"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "subarray"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subarray"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "count"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "subarray"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["So7NSArrayC", "count"]
+- ["So7NSArrayC", "init"]
+- !private ["So7NSArrayC", "subarray"]
+- !private ["So8NSCodingP", "count"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "subarray"]
+- !private ["So8NSCodingP", "subscript"]
+- !private ["So9NSCopyingP", "count"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "subarray"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So12NSDictionaryC", "subscript"]
+- !private ["So17NSFastEnumerationP", "count"]
+- ["So17NSFastEnumerationP", "init"]
+- !private ["So17NSFastEnumerationP", "subarray"]
+- !private ["So17NSFastEnumerationP", "subscript"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "count"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "subarray"]
+- !private ["So16NSMutableCopyingP", "subscript"]
+- !private ["So8NSObjectC", "count"]
+- !private ["So8NSObjectC", "subarray"]
+- !private ["So8NSObjectC", "subscript"]
+- !private ["So16NSObjectProtocolP", "count"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "subarray"]
+- !private ["So16NSObjectProtocolP", "subscript"]
+- !private ["So14NSSecureCodingP", "count"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "subarray"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["So8NSStringC", "init"]
+- !private ["14UrbanPiperTest14NetworkHandlerC", "getResult"]
+- ["14UrbanPiperTest14NetworkHandlerC", "init"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "count"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subarray"]
+- !private ["s8SequenceP", "subscript"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "CommentDetails"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "CommentsListResponseModelDelegate"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "NSArray"]
+- !private ["14UrbanPiperTest26StoriesDetailResponseModelC", "NSDictionary"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "NetworkHandler"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "String"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "commentDelegate"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "commentsArray"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "deinit"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "init"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "networkHandler"]
+- ["14UrbanPiperTest26StoriesDetailResponseModelC", "parseCommentsArray"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "NSArray"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "NSDictionary"]
+- !private ["14UrbanPiperTest24StoriesListResponseModelC", "NSMakeRange"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "NetworkHandler"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "StoriesListResponseModelDelegate"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "Story"]
+- !private ["14UrbanPiperTest24StoriesListResponseModelC", "String"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "deinit"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "init"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "itemIDArray"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "networkCall"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "networkHandler"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "parseResult"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "resultArray"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "storiesArray"]
+- ["14UrbanPiperTest24StoriesListResponseModelC", "storyDelegate"]
+- ["14UrbanPiperTest32StoriesListResponseModelDelegateP", "storiesArraySet"]
+- ["14UrbanPiperTest5StoryV", "NSArray"]
+- ["14UrbanPiperTest5StoryV", "String"]
+- ["14UrbanPiperTest5StoryV", "commentsCount"]
+- ["14UrbanPiperTest5StoryV", "id"]
+- ["14UrbanPiperTest5StoryV", "init"]
+- ["14UrbanPiperTest5StoryV", "kidsArray"]
+- ["14UrbanPiperTest5StoryV", "score"]
+- ["14UrbanPiperTest5StoryV", "time"]
+- ["14UrbanPiperTest5StoryV", "title"]
+- ["14UrbanPiperTest5StoryV", "url"]
+- ["14UrbanPiperTest5StoryV", "userName"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subarray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- "14UrbanPiperTest14CommentDetailsV"
+- "14UrbanPiperTest33CommentsListResponseModelDelegateP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So7NSArrayC"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So12NSDictionaryC"
+- "So17NSFastEnumerationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- "14UrbanPiperTest14NetworkHandlerC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
+- "14UrbanPiperTest26StoriesDetailResponseModelC"
+- "14UrbanPiperTest24StoriesListResponseModelC"
+- "14UrbanPiperTest32StoriesListResponseModelDelegateP"
+- "14UrbanPiperTest5StoryV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode 9.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/ajgupta/Desktop/UrbanPiperTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "8bfd875ba9680e6b2554ec88de109ac4"
